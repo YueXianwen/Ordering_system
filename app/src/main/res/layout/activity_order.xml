@@ -18,14 +18,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:gravity="center_vertical"
-                android:text="餐桌"
+                android:text="餐桌："
                 android:textColor="@color/black"
                 android:textSize="10pt" />
 
@@ -43,7 +43,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <EditText

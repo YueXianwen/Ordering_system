@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setNeutralButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(MainActivity.this,"已取消！",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this,"已取消！",Toast.LENGTH_SHORT).show();
                     }
                 });
                 builder.create().show();
