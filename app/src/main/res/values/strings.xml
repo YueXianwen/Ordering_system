@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">点餐系统</string>
+    <string name="登录">登录</string>
+    <string name="取消">取消</string>
+    <string name="点餐">点餐</string>
+    <string name="结账">结账</string>
+    <string name="查桌">查桌</string>
+    <string name="更新">更新</string>
+    <string name="sum">合计： ¥</string>
+</resources>

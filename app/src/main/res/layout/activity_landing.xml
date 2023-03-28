@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:background="@mipmap/ic_splash" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入用户名..." />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入密码..."
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_land"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#5871FF"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="@string/登录"
+            android:textSize="8pt"
+            android:drawableLeft="@mipmap/ic_key"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btn_cancel_1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#5871FF"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/取消"
+            android:textSize="8pt"
+            android:drawableLeft="@mipmap/ic_back"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

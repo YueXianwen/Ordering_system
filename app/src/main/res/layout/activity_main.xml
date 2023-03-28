@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
+
+        <RadioButton
+            android:id="@+id/r_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_on1"
+            android:gravity="center_horizontal"
+            android:text="@string/点餐"
+            android:textSize="10pt" />
+
+        <RadioButton
+            android:id="@+id/r_btn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_on2"
+            android:gravity="center_horizontal"
+            android:text="@string/结账"
+            android:textSize="10pt" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
+
+        <RadioButton
+            android:id="@+id/r_btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_on3"
+            android:gravity="center_horizontal"
+            android:text="@string/查桌"
+            android:textSize="10pt" />
+
+        <RadioButton
+            android:id="@+id/r_btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_on4"
+            android:gravity="center_horizontal"
+            android:text="@string/更新"
+            android:textSize="10pt" />
+
+    </RadioGroup>
+
+</LinearLayout>
