@@ -30,6 +30,7 @@
                 android:textSize="10pt" />
 
             <Spinner
+                android:id="@+id/spi"
                 android:layout_width="200dp"
                 android:layout_height="60dp" />
 

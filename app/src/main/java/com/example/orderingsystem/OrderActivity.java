@@ -8,8 +8,17 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
-public class OrderActivity extends AppCompatActivity {  //点餐界面
+public class OrderActivity extends AppCompatActivity {
+
+    private Spinner mspi;
+    private String[] strs = {"1号桌", "2号桌", "3号桌", "4号桌", "5号桌", "6号桌", "7号桌", "8号桌", "9号桌", "10号桌"};
+    private ArrayAdapter arrayAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +28,28 @@ public class OrderActivity extends AppCompatActivity {  //点餐界面
         supportActionBar.setDisplayShowHomeEnabled(true);
         supportActionBar.setIcon(R.mipmap.ic_coffee);
         supportActionBar.setDisplayHomeAsUpEnabled(true);
+        initView();
     }
+
+    private void initView() {
+        mspi = findViewById(R.id.spi);
+        arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item, strs);
+        mspi.setAdapter(arrayAdapter);
+        mspi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(OrderActivity.this,"您选择了"+strs[i],Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+    }
+
+
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
