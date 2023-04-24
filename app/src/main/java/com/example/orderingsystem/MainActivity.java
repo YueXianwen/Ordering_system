@@ -14,17 +14,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         ActionBar supportActionBar = getSupportActionBar();
+        assert supportActionBar != null;
         supportActionBar.setDisplayShowHomeEnabled(true);
         supportActionBar.setIcon(R.mipmap.ic_on1);
-
 
         RadioButton btn1 = findViewById(R.id.r_btn_1);
         RadioButton btn2 = findViewById(R.id.r_btn_2);

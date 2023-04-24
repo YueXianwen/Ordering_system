@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class QueryActivity extends AppCompatActivity {  //查询界面
 
@@ -17,6 +19,13 @@ public class QueryActivity extends AppCompatActivity {  //查询界面
         supportActionBar.setDisplayShowHomeEnabled(true);
         supportActionBar.setIcon(R.mipmap.ic_search);
         supportActionBar.setDisplayHomeAsUpEnabled(true);
+        Button btn_order = findViewById(R.id.btn_order3);
+        btn_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

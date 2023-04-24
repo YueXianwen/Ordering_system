@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -32,6 +33,13 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        Button btn_order = findViewById(R.id.btn_order1);
+        btn_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         mspi = findViewById(R.id.spi);
         arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item, strs);
         mspi.setAdapter(arrayAdapter);
@@ -46,8 +54,6 @@ public class OrderActivity extends AppCompatActivity {
             }
         });
     }
-
-
 
 
     @Override
